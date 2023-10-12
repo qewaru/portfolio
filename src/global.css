@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #eee7f9;   
+}
+
+body {
+  background-color: #110f15;
+}
+
+button {
+  border: 2px solid #191849;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: #1f1e5c;
+  color: #f7f7fd;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.lets-slide {
+  animation: 90s slide infinite linear;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
