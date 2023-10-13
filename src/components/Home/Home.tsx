@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <section onMouseMove={(event) => handleMouseMove(event)} id="home" className="flex flex-col h-screen items-center gap-8 justify-center">
-        <div style={{textShadow: shadow}} id='text' className="w-full text-9xl flex justify-center">HELLO</div>
+        <div style={{textShadow: shadow}} id='text' className="w-full text-8xl md:text-9xl flex justify-center">HELLO</div>
         <div className="flex flex-col gap-7 text-4xl items-center">
           <div className='flex flex-col items-center gap-1'>
             <p>I'm <span className="text-accent">Artur</span></p>

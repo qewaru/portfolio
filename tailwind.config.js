@@ -9,7 +9,8 @@ export default {
       sm: '426px',
       md: '769px',
       'semimd': '1025px',
-      lg: '1281px'
+      lg: '1281px',
+      xl: '1441px'
     },
     extend: {
       colors: {
