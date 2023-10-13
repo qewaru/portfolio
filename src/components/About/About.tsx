@@ -22,7 +22,7 @@ export default function About() {
   const { timerYears, timerSeconds } = useSecondCount()
 
   return (
-    <section id='about' className="w-full h-screen scroll-mt-32">
+    <section id='about' className="w-full h-screen scroll-mt-32 mb-20 sm:mb-0">
       <div className="flex flex-col items-center gap-20">
         <p className="text-4xl font-bold"><span className="text-accent font-bold">Who</span> am I?</p>
         <div className='flex flex-col items-center gap-7'>
