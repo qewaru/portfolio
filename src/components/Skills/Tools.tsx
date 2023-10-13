@@ -2,7 +2,7 @@ import { tools } from '../../../lib/data'
 
 export default function Tools() {
   return (
-    <div className="border-2 border-primary bg-secondary/50 p-5 w-[1000px]">
+    <div className="border-2 border-primary bg-secondary/50 p-5 w-[80%] lg:w-[60%]">
       <div className="w-full flex px-3 py-3">
         <p className='font-bold text-lg w-[50%] text-center'>Purpose</p>
         <p className='font-bold text-lg w-[50%] text-center'>Tool</p>

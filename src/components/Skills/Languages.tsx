@@ -2,7 +2,7 @@ import { skills } from '../../../lib/data'
 
 export default function Languages() {
   return (
-    <div className="border-2 border-primary bg-secondary/50 p-5 w-[1000px]">
+    <div className="border-2 border-primary bg-secondary/50 p-5 w-[80%] lg:w-[60%]">
       <div className="w-full flex  px-3 py-3">
         <div className='w-[220px]' />
         <div className='flex justify-between w-full'>
