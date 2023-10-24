@@ -52,11 +52,11 @@ export const tabs = [
             <span className='text-accent-200'> edit/delete/verify </span>items, brands and users. In this project Next.js takes care only of a client side and Node.js is doing all the backend work.</p>
     },
     {
-        name: 'DotaTrack',
+        name: 'Dota2Track',
         src: '../2.png',
-        links: {web: 'https://dotatrack.onrender.com', github: 'https://github.com/qewaru/dotatrack'},
-        languages: ['Express.js', 'Node.js', 'CSS', 'RESTful API'],
-        content: <p className='text-justify'>Main purpose of this app - fast information searching about professional players in DoTA 2 videogame. Client side uses Express.js to display the data that was recieved from OpenDota API.</p>
+        links: {web: 'https://dota2track.vercel.app', github: 'https://github.com/qewaru/dota2track'},
+        languages: ['Next.js', 'TypeScript', 'Tailwind CSS', 'API', 'Responsive'],
+        content: <p className='text-justify'>Main purpose of this app - fast information searching about professional players in DoTA 2 videogame. New version of my old project <a href='https://dotatrack.onrender.com/?' className='underline text-accent'>DotaTrack</> built on <span className='text-accent-200'> Next.js </span> with <span className='text-accent-200'> TypeScript </span>. Two main data sources are - <a href='https://www.opendota.com' className='underline text-accent'>OpenDota API</> and <a href='https://github.com/odota/dotaconstants' className='underline text-accent'>DotaConstants Repo</>. </p>
     },
     {
         name: 'ChatMe',
