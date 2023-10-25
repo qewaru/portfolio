@@ -54,7 +54,7 @@ export const tabs = [
     {
         name: 'Dota2Track',
         src: '../2.png',
-        links: {web: 'https://dota2track.vercel.app', github: 'https://github.com/qewaru/dota2track'},
+        links: {web: 'https://dota2track.vercel.app', github: 'https://github.com/qewaru/dotatrack2'},
         languages: ['Next.js', 'TypeScript', 'Tailwind CSS', 'API', 'Responsive'],
         content: <p className='text-justify'>Main purpose of this app - fast information searching about professional players in DoTA 2 videogame. New version of my old project <a href='https://dotatrack.onrender.com/?' className='underline text-accent'>DotaTrack</a> built on <span className='text-accent-200'> Next.js </span> with <span className='text-accent-200'> TypeScript </span>. Two main data sources are - <a href='https://www.opendota.com' className='underline text-accent'>OpenDota API</a> and <a href='https://github.com/odota/dotaconstants' className='underline text-accent'>DotaConstants Repo</a>. </p>
     },
