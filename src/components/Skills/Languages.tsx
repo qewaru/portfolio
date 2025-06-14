@@ -12,14 +12,14 @@ export default function Languages() {
         </div>
       </div>
       <ul className="flex flex-col gap-3">
-        {skills.map((item, index) => (
+        {skills.map(({progress, Icon, color, name}, index) => (
           <li key={index} className="flex bg-secondary w-full">
-            <div style={{width: screenSmall ? `${item.progress}` : '230px'}} className="flex items-center gap-3 py-2 px-4 bg-gradient-to-r from-primary to-primary/50 sm:bg-primary/40 font-bold">
-              {item.icon}
-              <p style={{color: `${item.color}`}}>{item.name}</p>
+            <div style={{width: screenSmall ? `${progress}` : '230px'}} className="flex items-center gap-3 py-2 px-4 bg-gradient-to-r from-primary to-primary/50 sm:bg-primary/40 font-bold">
+              <Icon size={20} style={{fill: color}} />
+              <p>{name}</p>
             </div>
             <div className="hidden sm:block h-auto w-full relative">
-              <div style={{width: `${item.progress}`}} className='py-2 px-4 h-full bg-gradient-to-r from-primary to-primary/50' />
+              <div style={{width: `${progress}`}} className='py-2 px-4 h-full bg-gradient-to-r from-primary to-primary/50' />
             </div>
           </li>
         ))}

@@ -1,11 +1,10 @@
 import React from 'react'
 import { IoLogoWindows, IoLogoJavascript, IoMdSchool } from 'react-icons/io'
-import { TbBrandVscode } from 'react-icons/tb'
-import { FaNodeJs } from 'react-icons/fa'
-import { BiSolidSchool, BiLogoLinkedin, BiLogoGithub, BiLogoInstagramAlt } from 'react-icons/bi'
+import { SiFigma, SiMongodb, SiYoutube, SiVercel, SiReact, SiVirtualbox,  } from 'react-icons/si'
 import { BsGit, BsFiletypeSql, BsPersonWorkspace } from 'react-icons/bs'
-import { SiFigma, SiMongodb, SiYoutube, SiExpress, SiVercel, SiNextdotjs, SiTailwindcss, SiCss3, SiReact, SiTypescript,  } from 'react-icons/si'
-// import { SiRender, SiStackoverflow } from 'react-icons/si'
+import { BiSolidSchool, BiLogoLinkedin, BiLogoGithub, BiLogoInstagramAlt, BiLogoTypescript } from 'react-icons/bi'
+import { TbBrandVscode } from 'react-icons/tb'
+import { FaCloud, FaJava, FaLinux, FaNetworkWired, FaPython } from 'react-icons/fa'
 
 export const links = [
     {
@@ -34,8 +33,49 @@ export const contact = [
 
 export const tabs = [
     {
-        name: 'itkbroke',
+        name: 'Kotobe',
         src: '../1.png',
+        links: {web: 'https://kotobe.bebxsh.org', github: ''},
+        languages: ['Next.js', 'Full-Stack', 'REST API', 'Responsive'],
+        content: 
+            <p className='text-justify'>
+                My latest project is a messenger built on 
+                <span className='text-accent-200'> Next.js</span>.
+                The project was made with passion and creativity to help people move away from greedy companies that hide common features behind paywalls. 
+                <span className='text-accent-200'> The features </span> 
+                I'm most proud of are 
+                <span className='text-accent-200'> profile customization </span> 
+                (gifs/images as profile picture), 
+                <span className='text-accent-200'> encryption methods</span>, 
+                and
+                <span className='text-accent-200'> design </span>. 
+                You can find more information about this project on its homepage.
+            </p>
+    },
+    {
+        name: 'Win Server',
+        src: '../2.png',
+        links: {web: 'https://github.com/qewaru/win-server-setup', github: 'https://github.com/qewaru/win-server-setup'},
+        languages: ['Networking', 'System Administration', 'Virtual Machine', 'Windows Server 2022', 'Guide'],
+        content: 
+        <p className='text-justify'>
+            I made a 
+            <span className='text-accent-200'> guide </span> 
+            for setting up and configuring the 
+            <span className='text-accent-200'> Windows Server 2022 </span> 
+            with 
+            <span className='text-accent-200'> AD DS</span>,
+            <span className='text-accent-200'> DNS</span>,
+            <span className='text-accent-200'> GPO</span>, and
+            <span className='text-accent-200'> automatition</span>.
+            Everything was done on QEMU 
+            <span className='text-accent-200'> Virutal Machine </span> 
+            (Virt-Manager).
+        </p>
+    },
+    {
+        name: 'itkbroke',
+        src: '../3.png',
         links: {web: 'https://itkbroke.vercel.app', github: 'https://github.com/qewaru/itkbroke'},
         languages: ['Next.js', 'Node.js', 'Tailwind CSS', 'MongoDB', 'RESTful API', 'Responsive'],
         content: 
@@ -51,43 +91,30 @@ export const tabs = [
             <span className='text-accent-200'> admin dashboard</span>, where admins can 
             <span className='text-accent-200'> edit/delete/verify </span>items, brands and users. In this project Next.js takes care only of a client side and Node.js is doing all the backend work.</p>
     },
-    {
-        name: 'Dota2Track',
-        src: '../2.png',
-        links: {web: 'https://dota2track.vercel.app', github: 'https://github.com/qewaru/dotatrack2'},
-        languages: ['Next.js', 'TypeScript', 'Tailwind CSS', 'API', 'Responsive'],
-        content: <p className='text-justify'>Main purpose of this app - fast information searching about professional players in DoTA 2 videogame. New version of my old project <a href='https://dotatrack.onrender.com/?' className='underline text-accent'>DotaTrack</a> built on <span className='text-accent-200'> Next.js </span> with <span className='text-accent-200'> TypeScript </span>. Two main data sources are - <a href='https://www.opendota.com' className='underline text-accent'>OpenDota API</a> and <a href='https://github.com/odota/dotaconstants' className='underline text-accent'>DotaConstants Repo</a>. </p>
-    },
-    {
-        name: 'ChatMe',
-        src: '../3.png',
-        links: {web: 'http://chatme.42web.io/index.php', github: 'https://github.com/qewaru/chatme'},
-        languages: ['HTML', 'PHP', 'CSS', 'MySQL'],
-        content: <p className='text-justify'>Small and simple messenger built on HTML and PHP, where users can create an account and chat with other users that are online on a website. "Purest" webiste without any frameworks or libraries.</p>
-    },
 ] as const
 
 export const skills = [
-  { style: '1', name: 'Node.js', progress: '98%', icon: React.createElement(FaNodeJs), color: '#9ecc97' },
-  { style: '2', name: 'Next.js', progress: '93%', icon: React.createElement(SiNextdotjs), color: '#eee7f9' },
-  { style: '3', name: 'Express.js', progress: '91%', icon: React.createElement(SiExpress), color: '#eee7f9' },
-  { style: '4', name: 'Vanilla JS', progress: '90%', icon: React.createElement(IoLogoJavascript), color: '#ffffa8' },
-  { style: '5', name: 'Tailwind CSS', progress: '89%', icon: React.createElement(SiTailwindcss), color: '#80e2ff' },
-  { style: '6', name: 'Vanilla CSS', progress: '88%', icon: React.createElement(SiCss3), color: '#7588ff' },
-  { style: '7', name: 'React.js', progress: '87%', icon: React.createElement(SiReact), color: '#99f6ff' },
-  { style: '8', name: 'MongoDB', progress: '80%', icon: React.createElement(SiMongodb), color: '#97cca2' },
-  { style: '9', name: 'TypeScript', progress: '70%', icon: React.createElement(SiTypescript), color: '#91ccff' },
-  { style: '10', name: 'Git', progress: '50%', icon: React.createElement(BsGit), color: '#dbb797' },
-  { style: '11', name: 'MySQL', progress: '40%', icon: React.createElement(BsFiletypeSql), color: '#97dbcb' },
+  { style: '1', name: 'JavaScript', progress: '85%', Icon: IoLogoJavascript, color: '#EACB32' },
+  { style: '2', name: 'TypeScript', progress: '83%', Icon: BiLogoTypescript, color: '#2D79C7' },
+  { style: '4', name: 'JS Frameworks', progress: '80%', Icon: SiReact, color: '#62DAFC' },
+  { style: '8', name: 'Linux', progress: '80%', Icon: FaLinux, color: '#D38D00' },
+  { style: '3', name: 'Windows', progress: '75%', Icon: IoLogoWindows, color: '#fff' },
+  { style: '5', name: 'Cloud Services', progress: '75%', Icon: FaCloud, color: '#FF9A00' },
+  { style: '6', name: 'Networking', progress: '75%', Icon: FaNetworkWired, color: '#23c918' },
+  { style: '7', name: 'Virtualization', progress: '75%', Icon: SiVirtualbox, color: '#18c9ae' },
+  { style: '9', name: 'Git', progress: '70%', Icon: BsGit, color: '#F05133' },
+  { style: '10', name: 'Python', progress: '60%', Icon: FaPython, color: '#3F7DAF' },
+  { style: '11', name: 'MySQL', progress: '40%', Icon: BsFiletypeSql, color: '#FFA618' },
+  { style: '12', name: 'Java', progress: '40%', Icon: FaJava, color: '#EB2025' },
 ] as const
  
 export const tools = [
-    { title: 'to use', name: 'Windows / Linux', icon: React.createElement(IoLogoWindows) },
-    { title: 'to code', name: 'VSCode', icon: React.createElement(TbBrandVscode) },
-    { title: 'to deploy', name: 'Vercel / Render', icon: React.createElement(SiVercel) },
-    { title: 'to store', name: 'MongoDB', icon: React.createElement(SiMongodb) },
-    { title: 'to design', name: 'Figma', icon: React.createElement(SiFigma) },
-    { title: 'to learn', name: 'YouTube / StackOverflow', icon: React.createElement(SiYoutube) },
+    { title: 'to use', name: 'Linux', icon: React.createElement(FaLinux) },
+    { title: 'to code', name: 'VSCode / IntelliJ / Visual Studio', icon: React.createElement(TbBrandVscode) },
+    { title: 'to deploy', name: 'Vercel / Railway / AWS / Cloudflare', icon: React.createElement(SiVercel) },
+    { title: 'to store', name: 'MongoDB / MySQL', icon: React.createElement(SiMongodb) },
+    { title: 'to design', name: 'Figma / Adobe Illustrator ', icon: React.createElement(SiFigma) },
+    { title: 'to learn', name: 'YouTube / GitHub', icon: React.createElement(SiYoutube) },
 ] as const
 
 
